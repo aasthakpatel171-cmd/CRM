@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexFlow CRM | Enterprise Telephony & Pipeline Intelligence</title>
+  <meta name="description" content="State-of-the-art enterprise CRM platform with dedicated portals for sales representatives and executive operations managers.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><polygon points='12 2 2 7 12 12 22 7 12 2'/><polyline points='2 17 12 22 22 17'/><polyline points='2 12 12 17 22 12'/></svg>">
+</head>
+<body class="gateway-body">
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="auth-ambient-glow auth-glow-cyan" style="top: -10%; left: 15%;"></div>
+  <div class="auth-ambient-glow auth-glow-purple" style="bottom: 5%; right: 10%;"></div>
+
+  <div class="gateway-wrapper">
+    
+    <!-- Top Navigation Bar -->
+    <header class="gateway-navbar">
+      <div class="brand-section">
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div>
+          <span class="brand-title">ApexFlow CRM</span>
+          <span class="brand-badge">Enterprise v2.4</span>
+        </div>
+      </div>
+
+      <div class="gateway-nav-links">
+        <div class="system-status-indicator">
+          <span class="status-indicator-dot online"></span>
+          <span>All Services Operational</span>
+        </div>
+        <a href="login-employee.html" class="btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+          Employee Portal
+        </a>
+        <a href="login-manager.html" class="btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+          Manager Portal
+        </a>
+      </div>
+    </header>
+
+    <!-- Active Session Resume Banner (if already logged in) -->
+    <div id="active-session-banner" class="active-session-alert gateway-session-banner" style="display: none;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      <div>
+        <span>You are currently authenticated as <strong id="active-session-user-name"></strong>.</span>
+      </div>
+      <div style="margin-left: auto; display: flex; gap: 0.75rem;">
+        <a id="active-session-continue-link" href="#" class="btn-primary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">Go to Workspace &rarr;</a>
+        <button id="btn-gateway-logout" class="btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">Switch Account</button>
+      </div>
+    </div>
+
+    <!-- Main Gateway Hero -->
+    <main class="gateway-main">
+      
+      <div class="gateway-hero">
+        <div class="gateway-hero-badge">
+          <span class="pulse-indicator"></span>
+          Role-Segregated Cloud Architecture
+        </div>
+        <h1 class="gateway-title">Customer Relationship & Intelligent Telephony</h1>
+        <p class="gateway-subtitle">
+          Select your destination portal below. Employees access their private call queues and daily targets with strict data segregation, while management oversees team velocity, live activity, and funnel metrics.
+        </p>
+      </div>
+
+      <!-- Dual Role Selection Cards Grid -->
+      <div class="gateway-portals-grid">
+        
+        <!-- CARD 1: EMPLOYEE PORTAL -->
+        <div class="portal-card portal-card-employee">
+          <div class="portal-card-glow employee-glow"></div>
+          
+          <div class="portal-card-header">
+            <div class="portal-icon-box employee-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="portal-role-tag employee-tag">Sales Representatives & SDRs</span>
+              <h2 class="portal-card-title">Employee Caller Portal</h2>
+            </div>
+          </div>
+
+          <p class="portal-card-desc">
+            Personalized calling environment strictly filtered to <strong>your assigned customer records</strong>. Never see another rep’s pipeline—focus on your daily call target, synthesize live audio dials, and advance deals.
+          </p>
+
+          <ul class="portal-feature-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Personal customer queue & call logs (Strict data isolation)</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Interactive audio dialer with animated sound visualizer</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Daily target tracker & individual talk-time analytics</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Mobile-optimized thumb dialing interface</span>
+            </li>
+          </ul>
+
+          <div class="portal-card-footer">
+            <a href="login-employee.html" class="btn-primary portal-enter-btn">
+              <span>Sign In as Representative</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <div class="portal-demo-accounts">
+              <span class="demo-tiny-label">Demo Reps:</span>
+              <span class="demo-tiny-pill">Alex Rivera</span>
+              <span class="demo-tiny-pill">Sarah Chen</span>
+              <span class="demo-tiny-pill">Marcus Vance</span>
+              <span class="demo-tiny-pill">Elena Rostova</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: MANAGER PORTAL -->
+        <div class="portal-card portal-card-manager">
+          <div class="portal-card-glow manager-glow"></div>
+
+          <div class="portal-card-header">
+            <div class="portal-icon-box manager-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div>
+              <span class="portal-role-tag manager-tag">Executive Operations & Supervisors</span>
+              <h2 class="portal-card-title">Manager Dashboard</h2>
+            </div>
+          </div>
+
+          <p class="portal-card-desc">
+            Complete executive operational oversight. Audit real-time call activity across all 4 representatives, monitor the sales rep productivity leaderboard, reassign accounts, and analyze conversion funnels.
+          </p>
+
+          <ul class="portal-feature-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Live real-time team call feed with instant updates</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Sales rep productivity leaderboard & quota tracking</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Instant lead transfer & account re-allocation tool</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Visual conversion funnels & call outcome distribution</span>
+            </li>
+          </ul>
+
+          <div class="portal-card-footer">
+            <a href="login-manager.html" class="btn-primary portal-enter-btn manager-enter-btn">
+              <span>Sign In as Supervisor</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <div class="portal-demo-accounts">
+              <span class="demo-tiny-label">Demo Executive:</span>
+              <span class="demo-tiny-pill manager-pill">Victoria Sterling (VP Sales)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Feature & Responsive Highlights -->
+      <section class="gateway-features-strip" aria-label="System Capabilities">
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon">📱</div>
+          <div>
+            <h4>100% Fully Responsive</h4>
+            <p>Optimized for mobile touchscreens, tablets, and 4K desktop displays.</p>
+          </div>
+        </div>
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon">🔒</div>
+          <div>
+            <h4>Strict Work Isolation</h4>
+            <p>Employees only see their own queue; supervisors see aggregate team data.</p>
+          </div>
+        </div>
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon">🎙️</div>
+          <div>
+            <h4>Synthesized Audio Telephony</h4>
+            <p>Zero-dependency Web Audio API dialer with ringing and call timers.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Gateway Footer -->
+    <footer class="gateway-footer">
+      <p>&copy; 2026 ApexFlow CRM Solutions • Multi-Tier Role Authenticated Web Architecture</p>
+    </footer>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const session = CRM_DATA.getCurrentSession();
+      if (session && session.user) {
+        const banner = document.getElementById('active-session-banner');
+        const nameEl = document.getElementById('active-session-user-name');
+        const linkEl = document.getElementById('active-session-continue-link');
+        const btnLogout = document.getElementById('btn-gateway-logout');
+
+        if (banner) banner.style.display = 'flex';
+        if (nameEl) nameEl.textContent = `${session.user.name} (${session.role.toUpperCase()})`;
+        if (linkEl) {
+          linkEl.href = session.role === 'employee' ? 'employee.html' : 'manager.html';
+          linkEl.textContent = `Continue to ${session.role === 'employee' ? 'Employee Portal' : 'Manager Dashboard'} →`;
+        }
+        if (btnLogout) {
+          btnLogout.addEventListener('click', () => {
+            CRM_DATA.logout('index.html');
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
